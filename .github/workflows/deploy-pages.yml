@@ -27,11 +27,11 @@ jobs:
       - run: npm run build
         env:
           GITHUB_ACTIONS: 'true'
-      - run: touch dist/client/cixi-midautumn-roadtrip/.nojekyll
+      - run: touch dist/client/.nojekyll
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: dist/client/cixi-midautumn-roadtrip
+          path: dist/client
 
   deploy:
     needs: build
