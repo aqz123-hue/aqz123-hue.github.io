@@ -60,10 +60,10 @@ const spotPhotos:Record<string,{src:string;source:string;label:string}>={
  '前童古镇':{src:'https://boot-img.xuexi.cn/image/1005/process/b16a31617ddf46d5b6933a7a685e1e06.jpg',source:'https://www.whw.kim/?a=index&aid=22553&c=View&m=home',label:'前童古镇水巷'},
  '横山岛〔开航后安排〕':{src:'https://dimg04.c-ctrip.com/images/0105k12000a211ir5CC6A_W_600_0_Q90.jpg?proc=autoorient',source:'https://gs.ctrip.com/html5/you/travels/689/4078275.html',label:'横山岛'},
  '强蛟岸边慢游':{src:'https://epaper.cnnb.com.cn/nbrb/pc/pic/202505/03/b39aac31-795a-41ba-a6fe-f9d44d70f7f9.jpg.1',source:'https://epaper.cnnb.com.cn/nbrb/pc/content/202505/03/content_211756.html',label:'宁海强蛟镇'},
- '云和梯田 · 九曲云环':{src:'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=85',source:'https://unsplash.com/photos/6cY-FvMlmkQ',label:'梯田山景（示意图）'},
- '古堰画乡 · 瓯江散步':{src:'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=85',source:'https://unsplash.com/photos/2LowviVHZ-E',label:'瓯江林水（示意图）'},
- '东阳卢宅 · 木雕古建':{src:'https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1200&q=85',source:'https://unsplash.com/photos/4Hmj9gkyM6c',label:'江南古建（示意图）'},
- '东阳 → 慈溪':{src:'https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1200&q=85',source:'https://unsplash.com/photos/0QvTyp0gH3A',label:'山路返程（示意图）'}
+ '云和梯田 · 九曲云环':{src:'/lishui-terrace.svg',source:'https://ditu.amap.com/place/B024215MX7',label:'梯田山景（示意图）'},
+ '古堰画乡 · 瓯江散步':{src:'/lishui-river.svg',source:'https://www.lsgyhx.com/index.html',label:'瓯江林水（示意图）'},
+ '东阳卢宅 · 木雕古建':{src:'/dongyang-luzhai.svg',source:'https://you.ctrip.com/sight/dongyang608/17289.html',label:'江南古建（示意图）'},
+ '东阳 → 慈溪':{src:'/dongyang-luzhai.svg',source:'https://you.ctrip.com/sight/dongyang608/17289.html',label:'返程中途示意图'}
 };
 function Poster({trip}:{trip:Trip}){return <article className={`poster ${trip.id}`}>
 <header className="poster-heading"><span>中秋出走三日 <span className="thin">/ 慈溪出发</span></span><span className="edition">路线 {trip.number} · 2026</span></header>
